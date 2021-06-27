@@ -1,0 +1,41 @@
+### Posting user on server
+
+POST http://localhost:4000/app/user
+Content-Type: application/json
+
+{
+        "username": "BozoBozovic",
+        "email": "Bozko@gmail.com"
+}
+
+### Posting user with referral on server
+
+POST http://localhost:4000/app/user?referral=60d49990b34dd51b1c91ff13
+Content-Type: application/json
+
+{
+        "username": "BenoPeno",
+        "email": "Benko@gmail.com"
+}
+
+### Getting all users
+
+GET http://localhost:4000/app/user
+
+
+### Get user by parameter username/email/id
+
+GET http://localhost:4000/app/user?username=BankoKubanko
+###
+GET http://localhost:4000/app/user?email=Jonh@gmail.com
+###
+GET http://localhost:4000/app/user?id=60d499d9b34dd51b1c91ff15
+
+
+### Get all users registered on referral link
+GET http://localhost:4000/app/userRefs?id=60d49990b34dd51b1c91ff13
+
+
+
+
+
